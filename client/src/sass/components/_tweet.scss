@@ -1,0 +1,108 @@
+.tweet{
+// background-color: olivedrab;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+    &__container{
+        // background-color: red;
+        width: 55%;
+        padding: 3rem;
+        border: var(--line);
+        box-shadow: var(--shadow-light);
+        border-radius: 5px;
+    }
+
+    &__username{
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        
+    }
+
+    &__body{
+        margin: 2rem auto;
+    }
+    &__text{
+        border-radius: 4px;
+        background-color: var(--color-grey-light-1);
+      
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: end;
+    }
+
+    &__notification{
+        // display: block;
+        margin-top: -4rem;
+        width: 100%;
+    }
+}
+
+.btn__tweet{
+    display: block;
+    background-color: var(--color-primary);
+    width: 20%;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    transition: all .2s;
+    margin-left: auto;
+
+    &:hover{
+        transform: translateY(-3px) ;
+        color: #fff;
+        box-shadow: 0 1rem 2rem rgba(#000,0.2);
+    }
+
+    &:active,
+    &:focus{
+        outline: none;
+        transform: translateY(-1px);
+        color: #fff;
+        box-shadow: 0 .5rem 1rem rgba(#000,0.2);
+    }
+
+}
+
+.btn__file{
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+
+   
+    
+
+    &:hover{
+        transform: translateY(-3px) ;
+        color: #fff;
+        box-shadow: 0 1rem 2rem rgba(#000,0.2);
+    }
+
+    &:active,
+    &:focus{
+        outline: none;
+        transform: translateY(-1px);
+        color: #fff;
+        box-shadow: 0 .5rem 1rem rgba(#000,0.2);
+    }
+}
+
+.noTweet{
+    display: flex;
+    justify-content: center;
+
+    &__text{
+        font-size: 2.4rem;
+        margin-top: 3rem;
+        text-transform: capitalize;
+        font-style: italic;
+    }
+}

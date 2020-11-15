@@ -1,0 +1,185 @@
+.profile{
+    
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    
+    &__container--header{
+        background-color: var(--color-grey-light-2);
+        height: 20rem;
+        display: flex;
+        width: 60%;
+        // justify-content: center
+    }
+    
+    &__name{
+        display: block;
+        margin-top: 1.4rem;
+        margin-bottom: 1.4rem;
+        margin-left: 1rem;
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    &__followers{
+        margin-right: 1rem;
+        text-transform: capitalize;
+        
+    }
+
+    &__following{
+        text-transform: capitalize;
+    }
+    
+
+    &__pic{
+        height: 10rem;
+        outline: none;
+        width: 10rem;
+        border-radius: 50%;
+
+        // margin: 2rem;
+        box-sizing: content-box;
+        border: 5px solid #fff;
+    }
+
+    &__leftSide{
+        // background-color: red;
+        // height: 40rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+        // align-items: center;
+       
+    }
+
+    &__rightSide{
+        // background-color: olivedrab;
+        width: 50%;
+        display: block;
+        text-align: right;
+    }
+
+
+    &__btn{
+
+        &--edit, &--follow{
+            background-color: #fff;
+            border: 2px solid var(--color-primary);
+            border-radius: 20px;
+            margin: 1rem;
+            // padding:.7rem;
+            font-weight: 500;
+            color: var(--color-primary);
+
+        &:hover{
+            background-color: #fff;
+            transform: translateY(-3px) ;
+            color: var(--color-primary);
+            box-shadow: 0 1rem 2rem rgba(#000,0.2);
+            font-weight: 500;
+            // border: 1px solid var(--color-primary);
+        }
+
+        &:active,
+        &:focus{
+            background-color: #fff;
+            outline: none;
+            transform: translateY(-1px);
+            color: var(--color-primary);
+            box-shadow: 0 .5rem 1rem rgba(#000,0.2);
+            font-weight: 500;
+            // border: 1px solid var(--color-primary);
+        }
+        }
+    }
+
+    &__container--body{
+
+        //  &::after{
+        //     content: "";
+        //     border-bottom: var(--line);
+        //     width: 100%;
+        // }
+        
+     
+        display: flex;
+        flex-direction: column;
+        border: var(--line);
+        // align-items: center;
+        width: 60%;
+      
+    }
+    
+
+
+    &__tweet{
+
+
+
+        &--name{
+        // margin-bottom: 1rem;
+        width: 70%;
+        font-size: 1.3rem;
+        // margin-left: 8rem;
+        margin: 0 auto;
+        margin-bottom: -1rem;
+        margin-top: 1rem;
+        }
+
+        &--body{
+            width: 70%;
+            // text-align: center;
+            margin: 1.1rem auto;
+        }
+
+        &--imgdiv{
+
+        }
+
+        &--img{
+            display: block;
+            margin: 0 auto;
+            height:20rem;
+            width: 70%; 
+            // height:15rem;
+            // width: 25rem; 
+            border-radius: 20px;
+          
+        }
+
+        &--buttons{
+            // margin: 0 auto;
+            // background-color: red;
+            width: 70%;
+            display: flex;
+            align-self: center;
+            margin-bottom: 1.5rem;
+        }
+        &--buttonspan{
+            margin-right: 2rem;
+        }
+
+        &--btnlike, &--btncomment{
+            font-size: 1.4rem;
+            border-radius: 50%;
+            color: var(--color-grey-dark-3);
+
+        }
+
+        &--btnlike:hover{
+            color: #F80648;
+            background-color: rgba(#F80648, .1) ;
+        }
+
+        &--btncomment:hover{
+            color: var(--color-primary);
+            background-color: rgba(#71c9f8, .2);
+        }
+
+    }
+
+
+}

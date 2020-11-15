@@ -1,0 +1,72 @@
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 100vh;
+
+   &__form{
+      
+        color: #fff;
+
+       &--btnSubmit{
+           background-color:  #0B96F0;
+           border-radius: 20px;
+           display: block;
+           margin: 0 auto;
+           margin-top: 3rem;
+           width: 55%;
+           font-weight: 500; 
+           &:hover{
+            background-color: #2088CA;
+           }
+       }
+
+       &--icon{
+           display: block;
+        font-size: 2.5rem;
+        color: #D9DFE2;
+        margin-bottom: 2rem;
+        text-align: center;
+       }
+   }
+
+   &__header{
+       text-align: center;
+   }
+
+   &__email{
+       width: 55%;
+       margin: .8rem auto;
+
+       &--label{
+           margin-left: 15.6rem;
+           margin-bottom: -.8rem;
+       }
+   }
+   &__name{
+       width: 55%;
+       margin: .8rem auto;
+
+       &--label{
+           margin-left: 15.6rem;
+           margin-bottom: -.8rem;
+       }
+   }
+   &__password{
+       width: 55%;
+       margin: .8rem auto;
+
+       &--label{
+        margin-left: 15.6rem;
+        margin-bottom: -.8rem;
+    }
+   }
+}
+
+.alert{
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
